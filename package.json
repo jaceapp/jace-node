@@ -1,0 +1,51 @@
+{
+  "name": "@jaceapp/jace",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/jace.umd.js",
+  "module": "dist/jace.mjs",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "watch-poll": "chokidar 'src/**/*' -c 'npm run build'",
+    "build": "tsc && vite build && postcss src/css/tailwind.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yace2/yace-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaceapp/jace-node/issues"
+  },
+  "homepage": "https://github.com/jaceapp/jace-node/#readme",
+  "peerDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@inertiajs/react": "^1.0.14",
+    "@types/node": "^20.11.26",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.5",
+    "chokidar-cli": "^3.0.0",
+    "laravel-echo": "^1.15.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^9.0.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  },
+  "dependencies": {
+    "@lexical/markdown": "^0.14.2",
+    "@lexical/react": "^0.14.2",
+    "lexical": "^0.14.2",
+    "react-markdown": "^9.0.1",
+    "socket.io-client": "^4.7.4",
+    "zustand": "^4.5.0"
+  }
+}

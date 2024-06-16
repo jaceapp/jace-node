@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        // other options...
+        "allowJs": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "strict": true,
+        "isolatedModules": true,
+        "target": "ESNext",
+        "declaration": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": false,
+        "emitDeclarationOnly": true,
+        "allowSyntheticDefaultImports": true,
+        "declarationDir": "types",
+        "outDir": "dist",
+        "rootDir": "src",
+        "lib": ["dom", "esnext"],
+        "baseUrl": "./",
+        "paths": {
+            "@Components/*": ["./src/React/Components/*"],
+            "@Global/*": ["./src/React/Global/*"],
+            "@Stores/*": ["src/React/Stores/*"],
+            "@Layouts/*": ["src/React/Layouts/*"],
+            "@Enums/*": ["src/React/Enums/*"],
+            "@Socket/*": ["src/React/Socket/*"],
+            "@Hooks/*": ["src/React/Hooks/*"],
+            "@Helpers/*": ["src/React/Helpers/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
+    "exclude": ["node_modules", "dist"]
+}
